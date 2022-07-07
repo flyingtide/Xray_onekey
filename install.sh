@@ -366,13 +366,13 @@ function modify_port() {
 }
 
 function configure_xray() {
-  cd /usr/local/etc/xray && rm -f config.json && wget -O config.json https://raw.githubusercontents.com/wulabing/Xray_onekey/${github_branch}/config/xray_xtls-rprx-direct.json
+  cd /usr/local/etc/xray && rm -f config.json && wget -O config.json https://raw.githubusercontents.com/flyingtide/Xray_onekey/${github_branch}/config/xray_xtls-rprx-direct.json
   modify_UUID
   modify_port
 }
 
 function configure_xray_ws() {
-  cd /usr/local/etc/xray && rm -f config.json && wget -O config.json https://raw.githubusercontents.com/wulabing/Xray_onekey/${github_branch}/config/xray_tls_ws_mix-rprx-direct.json
+  cd /usr/local/etc/xray && rm -f config.json && wget -O config.json https://raw.githubusercontents.com/flyingtide/Xray_onekey/${github_branch}/config/xray_tls_ws_mix-rprx-direct.json
   modify_UUID
   modify_UUID_ws
   modify_port
